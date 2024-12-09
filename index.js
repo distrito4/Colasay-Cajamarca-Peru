@@ -34,3 +34,4 @@ document.addEventListener("DOMContentLoaded", function () {
         return emailPattern.test(email);
     }
 });
+
