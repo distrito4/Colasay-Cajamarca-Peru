@@ -1,23 +1,55 @@
-// Función para manejar el formulario de opiniones
-document.getElementById('review-form').addEventListener('submit', function(e) {
-    e.preventDefault();
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById('review-form');
+    const reviewsContainer = document.getElementById('reviews');
 
-    // Obtener los datos del formulario
-    const name = document.getElementById('name').value;
-    const stars = document.getElementById('stars').value;
-    const comment = document.getElementById('comment').value;
+    // Función para agregar una nueva opinión al contenedor
+    function addReview(name, stars, comment) {
+        const reviewElement = document.createElement('div');
+        reviewElement.classList.add('review');
 
-    // Crear una nueva revisión
-    const review = document.createElement('div');
-    review.classList.add('review');
-    review.innerHTML = `
-        <h3>${name} - ${stars} estrellas</h3>
-        <p>${comment}</p>
-    `;
+        const starsText = '⭐'.repeat(stars);
 
-    // Agregar la nueva revisión a la lista de opiniones
-    document.getElementById('reviews').appendChild(review);
+        reviewElement.innerHTML = `
+            <h3>${name} - ${starsText}</h3>
+            <p>${comment}</p>
+        `;
 
-    // Limpiar el formulario
-    document.getElementById('review-form').reset();
+        reviewsContainer.appendChild(reviewElement);
+    }
+
+    // Función para cargar opiniones desde localStorage
+    function loadReviews() {
+        const storedReviews = JSON.parse(localStorage.getItem('reviews')) || [];
+        storedReviews.forEach(review => {
+            addReview(review.name, review.stars, review.comment);
+        });
+    }
+
+    // Función para guardar una nueva opinión en localStorage
+    function saveReview(name, stars, comment) {
+        const storedReviews = JSON.parse(localStorage.getItem('reviews')) || [];
+        storedReviews.push({ name, stars, comment });
+        localStorage.setItem('reviews', JSON.stringify(storedReviews));
+    }
+
+    // Manejar el envío del formulario
+    form.addEventListener('submit', function (e) {
+        e.preventDefault(); // Evitar que la página se recargue
+
+        const name = document.getElementById('name').value.trim();
+        const stars = parseInt(document.getElementById('stars').value);
+        const comment = document.getElementById('comment').value.trim();
+
+        // Validar que los campos no estén vacíos
+        if (name && comment) {
+            addReview(name, stars, comment); // Agregar la opinión
+            saveReview(name, stars, comment); // Guardar la opinión en localStorage
+            form.reset(); // Limpiar el formulario
+        } else {
+            alert('Por favor, completa todos los campos antes de enviar.');
+        }
+    });
+
+    // Cargar las opiniones al iniciar
+    loadReviews();
 });
