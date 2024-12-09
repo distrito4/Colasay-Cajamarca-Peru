@@ -144,20 +144,6 @@ main {
     text-align: center;
 }
 
-/* Videos relacionados */
-.videos-relacionados {
-    padding: 30px 15px;
-    text-align: center;
-    color: #003366;
-}
-
-.video-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
 /* Sección de contacto */
 .contacto {
     display: flex;
@@ -174,9 +160,10 @@ main {
 }
 
 #contacto h2 {
-    color: #003366;
+    color: #000000;
     font-size: 1.8rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Formulario */
@@ -294,16 +281,16 @@ footer a:hover {
     text-align: center;
 }
 
-.destinos h1 {
-    font-size: 3rem;
+.destinos h1 {  
     color: #003366;
-    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
 .destinos p {
     font-size: 1.2rem;
     line-height: 1.8;
-    margin-bottom: 50px;
     color: #666;
 }
 
@@ -380,15 +367,15 @@ footer a:hover {
 }
 
 .festividades h1 {
-    font-size: 3rem;
     color: #003366;
-    margin-bottom: 30px;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
 .festividades p {
     font-size: 1.2rem;
     line-height: 1.8;
-    margin-bottom: 50px;
     color: #666;
 }
 
@@ -424,9 +411,10 @@ footer a:hover {
 }
 
 .opiniones h1 {
-    font-size: 2.5rem;
-    color: #003366;
-    margin-bottom: 30px;
+    color: #000000;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
 .opiniones p {
