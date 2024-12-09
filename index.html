@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta name="google-site-verification" content="vHMlDIKJnzYmvUJm59Ti7Xa6E2uXR1pkmb-TfMP5dc4" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Explora el turismo en el distrito de Colasay. Conoce nuestros destinos, actividades y mucho más para una experiencia inolvidable.">
@@ -66,12 +65,13 @@
     <main>
         <section id="contacto">
             <h2>Contáctanos</h2>
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Tu nombre" required>
-                <input type="email" id="email" placeholder="Tu correo" required>
-                <textarea id="message" placeholder="Tu mensaje" required></textarea>
+            <form id="contact-form" action="index.php" method="POST">
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                <input type="email" id="email" name="email" placeholder="Tu correo" required>
+                <textarea id="message" name="message" placeholder="Tu mensaje" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
+            
         </section>
     </main>
 
@@ -90,3 +90,4 @@
     <script src="index.js"></script>
 </body>
 </html>
+
