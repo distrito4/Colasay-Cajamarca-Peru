@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora el turismo en el distrito de Colasay. Conoce nuestros destinos, actividades y mucho más para una experiencia inolvidable.">
+    <title>Turismo en Colasay</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado y menú de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home-btn" title="Volver a la página principal">Inicio</a></li>
+                <li><a href="destinos.html" id="destinos-btn" title="Descubre los destinos turísticos">Destinos</a></li>
+                <li><a href="festividades.html" id="festividades" title="Conoce nuestras costumbres y tradiciones">festividades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main id="content">
+
+        <!-- Bienvenida -->
+        <section id="inicio" class="window">
+            <div class="hero" style="background-image: url('img/colasay001.jpg');" aria-label="Paisaje de Colasay">
+                <div class="hero-text">
+                    <h1>Bienvenido a Colasay</h1>
+                    <p><em>Explora la belleza natural y cultural de nuestro distrito.</em></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Descripción del distrito -->
+        <section id="reseña" class="reseña">
+            <h2>Sobre Colasay</h2>
+            <p>Colasay es un distrito ubicado en la provincia de Jaén, en el departamento de Cajamarca, al norte de Perú. Rodeado de montañas y una vegetación exuberante, es un lugar conocido por su belleza natural y su clima templado, ideal para aquellos que buscan conectarse con la naturaleza. Sus paisajes ofrecen una impresionante diversidad de flora y fauna, lo que convierte a Colasay en un destino perfecto para el ecoturismo y la observación de aves. En este distrito, la agricultura es una actividad fundamental, destacándose el cultivo de café de alta calidad, que ha ganado reconocimiento tanto a nivel nacional como internacional, contribuyendo al desarrollo económico de la zona.</p>
+            
+            <!-- Imagen insertada en medio del texto -->
+            <img src="img/colasay002.jpg" alt="Paisaje de Colasay" class="foto-colasay">
+            
+            <p>El distrito mantiene una fuerte tradición cultural, con costumbres y festividades que reflejan la identidad de sus habitantes. A través de sus fiestas patronales, música, danzas y gastronomía, Colasay ofrece una rica experiencia cultural a quienes lo visitan. Durante las celebraciones, los visitantes pueden disfrutar hospitalidad de su gente, quienes mantienen vivas las tradiciones ancestrales. Además, su entorno rural y tranquilo lo convierte en un destino perfecto para quienes desean escapar del bullicio de las grandes ciudades y sumergirse en la vida rural de Cajamarca.</p>
+            <p>Con un alto valor ambiental y una ubicación privilegiada, Colasay es un lugar ideal para disfrutar de caminatas por sus paisajes, conocer más sobre la vida agrícola local y experimentar la calidez de su gente. Además de sus hermosos paisajes naturales, el distrito se caracteriza por su infraestructura amigable con el medio ambiente, ofreciendo a los turistas una experiencia auténtica y sostenible. Sin duda, Colasay es un destino que cautivará a quienes busquen una mezcla de naturaleza, cultura y tranquilidad</p>
+            <a href="historias.html" class="otros-textos">origen de colasay</a>
+        </section>
+
+
+        <!-- Sección de Mapa -->
+        <section id="mapa" class="mapa">
+            <h1>Ubicación de Colasay</h1>
+            <p>Encuentra la ubicación exacta del distrito de Colasay en el mapa interactivo a continuación.</p>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15902.718204327786!2d-79.18405373120594!3d-5.604974148707402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b97ab195132167%3A0xf2dd4dce43b8df8a!2sColasay%2C%20Cajamarca!5e0!3m2!1ses!2spe!4v1699967898392!5m2!1ses!2spe" 
+                    width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    
+    </main>
+    <!--seccion contacto-->
+    <main>
+        <section id="contacto">
+            <h2>Contáctanos</h2>
+            <form id="contact-form">
+                <input type="text" id="name" placeholder="Tu nombre" required>
+                <input type="email" id="email" placeholder="Tu correo" required>
+                <textarea id="message" placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Inicio</a> |
+            <a href="destinos.html">Destinos</a> |
+            <a href="festividades.html">Festividades</a>
+        </div>
+        <p>&copy; 2024 Turismo en Colasay. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace al archivo JS -->
+    <script src="index.js"></script>
+</body>
+</html>
