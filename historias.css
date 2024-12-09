@@ -7,16 +7,11 @@
 
 /* Fuentes */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Poppins;
     background-color: #f0f8ff; /* Fondo azul claro */
     color: #333;
     line-height: 1.6;
 }
-
-h2, h3 {
-    font-family: 'Roboto', sans-serif;
-}
-
 /* Estilos generales */
 a {
     text-decoration: none;
@@ -115,10 +110,7 @@ margin-top: 10px;
     text-align: justify;
 }
 
-/* Estilo de cada artículo */
-article {
-    margin-bottom: 30px;
-}
+
 
 article h3 {
     font-size: 1.5rem;
