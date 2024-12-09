@@ -1,0 +1,163 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff; /* Fondo azul claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos generales */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Flecha de regreso */
+.back-arrow {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #003366;; /* Azul brillante */
+    color: white;
+    border-radius: 5px;
+    margin: 20px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.back-arrow:hover {
+    background-color: #003366; /* Azul oscuro */
+}
+
+/* Encabezado */
+header {
+    background-color: #003366; /* Azul oscuro para el encabezado */
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f0f8ff; /* Azul claro para hover */
+}
+
+/* Contenedor principal */
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* Sección de historias */
+.distrito-colasay {
+width: 100%; /* Asegura que ocupe todo el ancho disponible */
+
+height: auto;
+object-fit: cover;
+border-radius: 8px;
+float: left; /* Imagen flota a la izquierda en pantallas grandes */
+margin-right: 20px; /* Espacio entre la imagen y el texto */
+margin-bottom: 10px;
+margin-top: 10px;
+}
+.historias {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.historias h2 {
+    font-size: 2rem;
+    color: #003366; /* Azul brillante */
+    margin-bottom: 20px;
+    text-align: center;
+}
+.historias h3 {
+    font-size: 2rem;
+    color: #003366; /* Azul brillante */
+    margin-bottom: 20px;
+    text-align: center;
+}
+.historias p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilo de cada artículo */
+article {
+    margin-bottom: 30px;
+}
+
+article h3 {
+    font-size: 1.5rem;
+    color: #003366; /* Azul brillante */
+    margin-bottom: 10px;
+}
+
+/* Botón de leer más */
+.read-more {
+    background-color: #003366; /* Azul brillante */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto; /* Aplica margen automático en los lados */
+    
+}
+
+.read-more:hover {
+    background-color: #4682b4; /* Azul oscuro */
+}
+
+/* Contenido adicional de la historia (oculto por defecto) */
+.story-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #003366; /* Azul oscuro para el pie de página */
+    color: white;
+    font-size: 1rem;
+}

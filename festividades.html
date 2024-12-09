@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre las costumbres, festividades y tradiciones que hacen único al distrito de Colasay.">
+    <title>Costumbres de Colasay</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Encabezado y menú de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="festividades.html">Festividades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    </div>
+
+    <!-- Sección principal de costumbres -->
+    <main id="content">
+        <section class="festividades">
+            <h1>Festividades de Colasay</h1>
+            <p>Colasay es un lugar rico en tradiciones y costumbres que han pasado de generación en generación. Aquí te compartimos algunas de las más representativas.</p>
+
+            <div class="festividad" id="san-juan">
+                <img src="img/san juan.jpeg" alt="Fiesta de San Juan">
+                <div class="festividad-info">
+                    <h2>Fiesta de San Juan</h2>
+                    <p>La Fiesta de San Juan en Colasay, un pintoresco distrito de la región Cajamarca, es una de las festividades más esperadas y vibrantes de la zona. 
+                    Celebrada el 24 de junio en honor a San Juan Bautista, esta festividad reúne a la comunidad local y visitantes en una jornada de devoción, música, baile, y tradiciones.<br>
+                    Una de las características más distintivas de la fiesta en Colasay es la participación de los marchilejos, una agrupación de músicos y danzantes que se convierten en el alma de la celebración. Estos coloridos personajes, vestidos con trajes típicos y máscaras tradicionales, recorren las calles del pueblo al ritmo de las melodías andinas, llevando consigo el espíritu festivo de la ocasión.<br>
+                    Durante la festividad, la comunidad se une en una serie de actividades que incluyen misas solemnes, procesiones y danzas tradicionales. La devoción religiosa se entrelaza con el gozo popular, creando un ambiente lleno de emoción y energía. Los marchilejos representan una de las expresiones culturales más auténticas de la fiesta, uniendo a todos los asistentes en un ambiente de alegría y comunión.<br>
+                    La Fiesta de San Juan en Colasay no solo es una celebración religiosa, sino también una oportunidad para revivir las costumbres ancestrales, fortalecer los lazos de amistad y solidaridad entre los miembros de la comunidad y mostrar la riqueza cultural del distrito. Es un evento que, año tras año, atrae a los lugareños y turistas por igual, dejando en todos un recuerdo imborrable de la alegría y el fervor del San Juan de Colasay.</p>
+                </div>
+            </div>
+
+            <div class="festividad" id="san-francisco-de-asis">
+                <img src="img/san francisco de asis.jpg" alt="Fiesta de San Francisco de Asís">
+                <div class="festividad-info">
+                    <h2>Fiesta de San Francisco de Asís</h2>
+                    <p>La Fiesta de San Francisco de Asís en Colasay, Jaén, es una de las festividades más significativas para los habitantes de este pintoresco distrito de la región Cajamarca. 
+                        Celebrada el 4 de octubre, la festividad honra a San Francisco, conocido por su vida de humildad, amor hacia la naturaleza y su profundo espíritu religioso.<br>
+                    Durante este día, la comunidad se une en una serie de actos litúrgicos, que incluyen una misa especial y una procesión en honor al santo, en la que los feligreses acompañan la imagen de San Francisco por las principales calles del pueblo. La procesión es una de las actividades más esperadas, ya que refleja la devoción de la comunidad y su compromiso con las enseñanzas del santo franciscano.<br>
+                    También se traslada al santo patrono San Francisco de Asís al sector Piri Piri, el antiguo pueblo colasaíno, y se realiza un pequeño baile con fieles devotos.<br>
+                    Uno de los momentos más destacados es la presencia de los marchilejos, quienes recorren las calles del pueblo venidos desde el sector de El Tablón. Estos personajes, vestidos con coloridos trajes y máscaras, llenan de alegría y energía las calles mientras acompañan la procesión, creando un ambiente festivo que contagia a todos los presentes. Los marchilejos son una tradición viva que representa la fusión entre la devoción religiosa y la alegría popular.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Opiniones -->
+        <section class="opiniones">
+            <h1>Opiniones de Visitantes</h1>
+            <form id="review-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" placeholder="Escribe tu nombre..." required>
+                
+                <label for="stars">Calificación:</label>
+                <select id="stars">
+                    <option value="5">⭐⭐⭐⭐⭐</option>
+                    <option value="4">⭐⭐⭐⭐</option>
+                    <option value="3">⭐⭐⭐</option>
+                    <option value="2">⭐⭐</option>
+                    <option value="1">⭐</option>
+                </select>
+                
+                <label for="comment">Comentario:</label>
+                <textarea id="comment" placeholder="Escribe tu opinión aquí..." required></textarea>
+                <button type="submit">Enviar Opinión</button>
+            </form>
+
+            <div id="reviews"></div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <!-- Pie de página -->
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Inicio</a> |
+            <a href="destinos.html">Destinos</a> |
+            <a href="festividades.html">Festividades</a>
+        </div>
+        <p>&copy; 2024 Turismo en Colasay. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="festividades.js"></script>
+</body>
+</html>
