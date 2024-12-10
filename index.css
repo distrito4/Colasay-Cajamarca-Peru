@@ -143,62 +143,6 @@ main {
 .mapa p {
     text-align: center;
 }
-
-/* Sección de contacto */
-.contacto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px 15px;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background-color: #fff;
-}
-
-#contacto h2 {
-    color: #000000;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Formulario */
-#contact-form input,
-#contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-#contact-form input:focus,
-#contact-form textarea:focus {
-    border-color: #003366;
-    outline: none;
-}
-
-#contact-form button {
-    width: 100%;
-    padding: 12px;
-    background-color: #003366;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#contact-form button:hover {
-    background-color: #002244;
-}
-
 /* Pie de página */
 footer {
     background-color: #003366;
