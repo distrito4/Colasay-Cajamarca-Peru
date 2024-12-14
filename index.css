@@ -193,11 +193,6 @@ footer a:hover {
         width: 80%; /* Reduce el tamaño para pantallas pequeñas */
     }
 
-    .video-container {
-        flex-direction: column;
-        gap: 15px;
-    }
-}
 
 @media (max-width: 480px) {
     nav ul li {
@@ -260,25 +255,6 @@ footer a:hover {
 .destino-info {
     padding: 20px;
     flex: 1;
-    text-align: justify;
-}
-
-/* Opiniones en la sección destinos */
-.opiniones {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.opiniones h1 {
-    font-size: 2.5rem;
-    color: #003366;
-    margin-bottom: 30px;
-}
-
-.opiniones p {
-    font-size: 1rem;
-    color: #444;
-    line-height: 1.6;
     text-align: justify;
 }
 
@@ -345,26 +321,6 @@ footer a:hover {
 .festividad-info {
     padding: 20px;
     flex: 1;
-    text-align: justify;
-}
-
-/* Opiniones en la sección festividades */
-.opiniones {
-    text-align: center;
-    margin-top: 40px;
-}
-
-.opiniones h1 {
-    color: #000000;
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.opiniones p {
-    font-size: 1rem;
-    color: #444;
-    line-height: 1.6;
     text-align: justify;
 }
 
